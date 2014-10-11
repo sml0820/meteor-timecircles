@@ -1,16 +1,16 @@
 Package.describe({
-  summary: " \* Fill me in! *\ ",
-  version: "1.0.0",
-  git: " \* Fill me in! *\ "
+  summary: " TimeCircles is a jQuery plugin that provides a nice looking way to count down or up ",
+  version: "0.1.0",
+  git: "https://github.com/sml0820/meteor-timecircles.git"
 });
 
 Package.onUse(function(api) {
   api.versionsFrom('METEOR@0.9.3.1');
-  api.addFiles('sml0820:meteor-timecircles.js');
+  api.addFiles(['TimeCircles/inc/TimeCircles.js', 'TimeCircles/inc/TimeCircles.css']);
 });
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('sml0820:meteor-timecircles');
-  api.addFiles('sml0820:meteor-timecircles-tests.js');
+  api.use('sml0820:timecircles');
+  api.addFiles(['TimeCircles/inc/TimeCircles.js', 'TimeCircles/inc/TimeCircles.css']);
 });
