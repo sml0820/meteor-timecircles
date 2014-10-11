@@ -11,6 +11,6 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('sml0820:timecircles');
+  api.use('sml0820:meteor-timecircles');
   api.addFiles(['TimeCircles/inc/TimeCircles.js', 'TimeCircles/inc/TimeCircles.css']);
 });
